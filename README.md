@@ -1,2 +1,2 @@
-# oop_witcher_projet
-windows form application which uses oop concepts and represents withcer universe
+# oop_witcher_project
+windows form application which uses oop concepts and represents witcher universe

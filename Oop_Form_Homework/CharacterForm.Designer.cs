@@ -36,6 +36,8 @@
             this.speakButton = new System.Windows.Forms.Button();
             this.attackButton = new System.Windows.Forms.Button();
             this.teleportButton = new System.Windows.Forms.Button();
+            this.magic = new System.Windows.Forms.Label();
+            this.power = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.characterPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,12 +124,33 @@
             this.teleportButton.Visible = false;
             this.teleportButton.Click += new System.EventHandler(this.teleportButton_Click);
             // 
+            // magic
+            // 
+            this.magic.AutoSize = true;
+            this.magic.Location = new System.Drawing.Point(929, 207);
+            this.magic.Name = "magic";
+            this.magic.Size = new System.Drawing.Size(210, 37);
+            this.magic.TabIndex = 4;
+            this.magic.Text = "Magic Power ";
+            // 
+            // power
+            // 
+            this.power.AutoSize = true;
+            this.power.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.power.Location = new System.Drawing.Point(978, 263);
+            this.power.Name = "power";
+            this.power.Size = new System.Drawing.Size(89, 37);
+            this.power.TabIndex = 5;
+            this.power.Text = "label";
+            // 
             // CharacterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(1384, 782);
+            this.Controls.Add(this.power);
+            this.Controls.Add(this.magic);
             this.Controls.Add(this.attackButton);
             this.Controls.Add(this.teleportButton);
             this.Controls.Add(this.signButton);
@@ -157,5 +180,7 @@
         private System.Windows.Forms.Button teleportButton;
         private System.Windows.Forms.Label descriptionLabel;
         private System.Windows.Forms.Button speakButton;
+        private System.Windows.Forms.Label magic;
+        private System.Windows.Forms.Label power;
     }
 }

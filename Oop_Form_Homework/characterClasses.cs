@@ -26,8 +26,7 @@ namespace Oop_Form_Homework
         public override string Description => "A skilled warrior and member of the royal family of Cintra.";
         public override string SpeakVideoPath => "C:\\Users\\efedi\\source\\repos\\Oop_Form_Homework\\Oop_Form_Homework\\Resources\\ciri speaking.mp4";
         public override string PicturePath => "C:\\Users\\efedi\\source\\repos\\Oop_Form_Homework\\Oop_Form_Homework\\Resources\\ciri.png";
-        public new string UseSignPath => "";
-        public new string AttackVideoPath => "C:\\Users\\efedi\\source\\repos\\Oop_Form_Homework\\Oop_Form_Homework\\Resources\\ciri attack.mp4";
+        
 
         public string teleport => "C:\\Users\\efedi\\source\\repos\\Oop_Form_Homework\\Oop_Form_Homework\\Resources\\ciri teleport.mp4";
     } 

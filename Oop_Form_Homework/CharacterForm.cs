@@ -22,13 +22,20 @@ namespace Oop_Form_Homework
             descriptionLabel.Text = character.Description;
             characterPictureBox.Image = Image.FromFile(character.PicturePath);
             this.character = character;
+            
 
+            magic.Visible= character is IMage;
+            power.Visible = character is IMage;
 
-            // Show attackButton and useMagicButton only if character is an IWitcher or IMage, respectively
+            
             attackButton.Visible = character is IWitcher;
-            signButton.Visible = character is IWitcher;
+            signButton.Visible = character is Geralt;
             magicButton.Visible = character is IMage;
             teleportButton.Visible = character is Ciri;
+            if (character is IMage mage)
+            {
+                power.Text = mage.MagicPower;
+            }
         }
 
         private void speakButton_Click(object sender, EventArgs e)
@@ -68,9 +75,9 @@ namespace Oop_Form_Homework
 
         private void signButton_Click(object sender, EventArgs e)
         {
-            if (character is IWitcher witcher)
+            if (character is Geralt geralt)
             {
-                VideoForm videoForm = new VideoForm(witcher.UseSignPath);
+                VideoForm videoForm = new VideoForm(geralt.UseSignPath);
                 videoForm.Show();
             }
         }
